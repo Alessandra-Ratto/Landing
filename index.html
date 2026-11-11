@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Le Wagon</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div class="banner">
+			<div class="container">
+				<h1>Building digital experiences that matter</h1>
+				<h2>Front-end developer focused on clean code, modern design, and functional web applications.</h2>
+				<a href="#apply-section" class="btn-blue">Explore my work</a>
+
+			</div>
+		</div>
+			
+		<div class="container">
+
+			<h2>My Areas of Focus</h2>
+			<div class="cards">
+				<div class="card">
+					<img src="images/Web.png" alt="Web Development">
+					<h3>Web Development</h3>
+				
+				</div>
+
+				<div class="card">
+					<img src="images/UI.png" alt="UI/UX & Design">
+					<h3>UI/UX & Design</h3>
+				
+				</div>
+
+				<div class="card">
+					<img src="images/Projects.png" alt="Projects & Tech">
+					<h3>Projects & Tech</h3>
+
+				</div>
+			</div>
+		<div id="apply-section">
+			<div data-tf-live="01M75WZ36TVK3MT61YMT37VM6Y" style="width:100%;height:500px;"></div>
+			<script src="https://embed.typeform.com/next/embed.js"></script>
+		</div>
+		<h1 class="page-title">Alessandra Ratto</h1>
+		<button class="shout-button">Say hello</button>
+		<p>Contact me: <span class="email">alessandraratto@hotmail.com</span></p>
+		<button class="copy-email">Copy my email</button>
+		<script>
+    		const title = document.querySelector(".page-title");
+    		const shoutButton = document.querySelector(".shout-button");
+			function sayHello() {
+      		title.textContent = "Hello, nice to meet you!";
+   			}
+			shoutButton.addEventListener("click", sayHello);
+			const email = document.querySelector(".email");
+			const copyButton = document.querySelector(".copy-email");
+			function copyEmail() {
+			navigator.clipboard.writeText(email.textContent);
+     		copyButton.textContent = "Copied!";
+    		}
+			copyButton.addEventListener("click", copyEmail);
+		</script>
+
+		
+	</body>
+</html>
